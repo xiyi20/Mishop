@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Xiaomi</title>
+    <title>小米商城</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <style>
@@ -229,26 +229,17 @@
         }
         #bottom #bottom2{
             float: left;
-            margin-left: 26px;
-            width: 970px;
+            margin-left: 18px;
+            width: 979px;
             height: 100%;
         }
-        #bottom #bottom2 ul{
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #bottom #bottom2 ul li{
+        #bottom #bottom2 div{
             float: left;
-            margin-left: 19px;
-            width: 32%;height: 100%;
+            margin-left: 17px;
+            width: 315px;height: 100%;
         }
-        #bottom #bottom2 ul li:first-child{
+        #bottom #bottom2 div:first-child{
             margin-left: 0;
-        }
-        #bottom #bottom2 ul li:last-child{
-            margin-right: 0;
         }
         #box{
             width: 1230px;
@@ -256,6 +247,18 @@
             margin-bottom: 15px;
         }
     </style>
+    <script>
+        function resetsize(){
+            var allWidth = document.getElementById('all').offsetWidth;
+            if (window.innerWidth < allWidth) {
+                document.body.style.width = allWidth + 'px';
+            } else {
+                document.body.style.width = '100%';
+            }
+        }
+        window.addEventListener('resize', resetsize);
+        window.addEventListener('pageshow',resetsize);
+    </script>
 </head>
 <body>
     <div id="banner">
@@ -428,11 +431,9 @@
                 </ul>
             </div>
             <div id="bottom2">
-                <ul>
-                    <li><a href=""><img src="images/buttom1.png" width="100%" height="100%" alt=""></a></li>
-                    <li><a href=""><img src="images/buttom2.png" width="100%" height="100%" alt=""></a></li>
-                    <li><a href=""><img src="images/buttom3.png" width="100%" height="100%" alt=""></a></li>
-                </ul>
+                <div><a href=""><img src="images/buttom1.png" width="100%" height="100%" alt=""></a></div>
+                <div><a href=""><img src="images/buttom2.png" width="100%" height="100%" alt=""></a></div>
+                <div><a href=""><img src="images/buttom3.png" width="100%" height="100%" alt=""></a></div>
             </div>
         </div>
     </div>
