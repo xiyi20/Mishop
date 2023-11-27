@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <style>
-        *{margin-bottom: 15px;}
+        *{margin: 0;padding: 0;}
         a{text-decoration: none;color: white;}
         li{list-style: none;}
         @keyframes jianbian{
@@ -14,21 +14,23 @@
             50%{opacity: 0.5;}
             100%{opacity: 1;}
         }
-        body{
-            width: 100%;
+        #banner{
+            height: 40px;
+            margin: 0;padding: 0;
+            background-color: rgb(51, 51, 51);
         }
         #all{
             position: relative;
-            width: 1600px;
+            width: 1230px;
             margin: 0 auto;
         }
         #top{
             position: relative;
-            width: 1600px;
-            height: 130px;
+            width: 1230px;
+            height: 100px;
         }
         #top #logo{
-            width: 80px;height: 80px;
+            width: 56px;height: 56px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -44,21 +46,21 @@
             text-align: center;
         }
         #top #r_nav li a{
-            font-size: 20px;
-            color: black;
+            font-size: 16px;
+            color: rgb(51, 51, 51);
         }
         #top #r_nav li a:hover{
             color: orangered;
         }
         #top #search{
-            left: 70%;
-            width: 405px;height: 50%;
+            left: 929px;
+            width: 301px;height: 50px;
             transform: translateY(-50%);
         }
         #top #search input{
             float: left;
             border: none;
-            height: 96%;width: 325px;
+            height: 50px;width: 245px;
             background-color: rgb(24, 27, 40);
         }
         #top #search input:focus {
@@ -67,7 +69,7 @@
         #top #search button{
             float: left;
             border: none;
-            height: 100%;width: 70px;
+            height: 52px;width: 52px;
             font-size: 30px;
             background-color: white;
             color: rgb(97, 97, 97);
@@ -80,9 +82,12 @@
         #left{
             position: absolute;
             z-index: 1;
-            width: 280px;
-            height: 600px;
+            width: 233px;
+            height: 460px;
             background-color: rgba(82, 82, 82, 0.5);
+        }
+        #left #left_nav{
+            margin-top: 18px;
         }
         #left #left_nav,#left #left_nav li{
             width: 100%;
@@ -90,9 +95,9 @@
         }
         #left #left_nav li{
             margin: 0;
-            line-height: 50px;
+            line-height: 38px;
             text-indent: 2em;
-            height: 50px;
+            height: 38px;
         }
         #left #left_nav li span{
             display: block;
@@ -107,7 +112,7 @@
             width: 30px;height: 30px;
             content: '';
             background: url(images/箭头.png) no-repeat;
-            background-size: 30px,30px;
+            background-size: 23px,23px;
         }
         #left #left_nav li:hover{
             background-color: orangered;
@@ -145,9 +150,9 @@
             position: absolute;
             display: none;
             z-index: 1;
-            left: 280px;top: 0;
+            left: 233px;top: 0;
             box-shadow: 2px 2px 5px gray;
-            width: 300px;height: 600px;
+            width: 300px;height: 460px;
             background-color: white;
         }
         #nav_phone dd,#nav_phone a,
@@ -167,7 +172,7 @@
             color: black;
 
         }
-        /* power mind life health earphone travel flat */
+
         #nav_phone a:hover,
         #nav_tv a:hover,
         #nav_watch a:hover,
@@ -185,34 +190,34 @@
         #main{
             position: absolute;
             z-index: 0;
-            width: 1600px;
-            height: 600px;
+            width: 1230px;
+            height: 460px;
             background-color: yellow;
         }
         #bottom{
-            width: 1600px;
-            height: 220px;
-
+            width: 1230px;
+            height: 172px;
         }
         #bottom #bottom1{
             float: left;
-            width: 280px;
+            width: 233px;
             height: 100%;
             background-color: rgb(95, 87, 80);
         }
         #bottom #bottom1 ul{
-            width: 280px;
+            width: 233px;
             height: 100%;
             padding: 0;
         }
         #bottom #bottom1 ul li{
             float: left;
-            margin: 10px 0 50px 10px;
-            width: 80px;
+            margin: 15px 0 13px 16px;
+            width: 56px;
             text-align: center;
         }
         #bottom #bottom1 ul li a{
-            color: gray;
+            font-size: 12px;
+            color: rgb(204, 204, 204);
         }
         #bottom #bottom1 ul li a:hover{
             color: white;
@@ -224,8 +229,8 @@
         }
         #bottom #bottom2{
             float: left;
-            margin-left: 10px;
-            width: 1310px;
+            margin-left: 26px;
+            width: 970px;
             height: 100%;
         }
         #bottom #bottom2 ul{
@@ -236,7 +241,7 @@
         }
         #bottom #bottom2 ul li{
             float: left;
-            margin-left: 26px;
+            margin-left: 19px;
             width: 32%;height: 100%;
         }
         #bottom #bottom2 ul li:first-child{
@@ -246,16 +251,20 @@
             margin-right: 0;
         }
         #box{
-            width: 1600px;
-            height: 600px;
+            width: 1230px;
+            height: 460px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
+    <div id="banner">
+
+    </div>
     <div id="all">
         <div id="top">
             <div id="logo">
-                <a href=""><img src="images/logo-mi2.png" width="80" height="80" alt=""></a>
+                <a href=""><img src="images/logo-mi2.png" width="56" height="56" alt=""></a>
             </div>
             <div id="r_nav">
                 <nav>
@@ -279,10 +288,8 @@
         <div id="box">
             <div id="left">
                 <div id="left_nav">
-
                     <li class="phone"><span>手机</span>
                         <div id="nav_phone">
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米6</a></dd>
                             <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米8</a></dd>
                             <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米9</a></dd>
                             <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米10</a></dd>
@@ -301,7 +308,6 @@
                             <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视e</a></dd>
                             <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视f</a></dd>
                             <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视g</a></dd>
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视h</a></dd>
                         </div>
                     </li>
                     <li class="watch"><span>手表</span>
@@ -404,10 +410,9 @@
                         </div>
                     </li>
                 </div>
-
             </div>
             <div id="main">
-                <a href=""><img src="images/mi14.png" width="100%" height="100%" alt=""></a>
+                <a href=""><img src="images/k70.jpg" width="100%" height="100%" alt=""></a>
             </div>
         </div>
 
