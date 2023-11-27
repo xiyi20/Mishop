@@ -11,7 +11,9 @@
         li{list-style: none;}
         @keyframes jianbian{
             0%{opacity: 0;}
+            25%{opacity: 0.25;}
             50%{opacity: 0.5;}
+            75%{opacity: 0.75;}
             100%{opacity: 1;}
         }
         #banner{
@@ -51,15 +53,39 @@
             color: rgb(176, 176, 176);
         }
         #banner #content .banner2{
-            margin-left: 90%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1110px;
             width: 120px;height: 40px;
             background-color: rgb(66, 66, 66);
         }
-        #banner #content .banner2 p{
+        #banner #content .banner2 a{
+            font-size: 12px;
             color: rgb(176, 176, 176);
         }
-        #banner #content .banner2:hover p{
+        #banner #content .banner2:hover,
+        #banner #content .banner2:hover a{
             color: orangered;
+            background-color: white;
+        }
+        #banner #content .banner2:hover div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: jianbian 400ms linear 0ms 1 normal both;
+            font-size: 12px;
+            color: black;
+        }
+        #banner #content .banner2 div{
+            display: none;
+            position: absolute;
+            z-index: 2;
+            right: 0%;top: 40px;
+            width: 330px;height: 100px;
+            background-color: white;
+            box-shadow: 0 2px 4px black;
         }
         #all{
             position: relative;
@@ -325,7 +351,8 @@
                 </ul>
             </div>
             <div class="banner2">
-                <p><i class="fa fa-shopping-cart"></i>购物车(0)</p>
+                <a href=""><i class="fa fa-shopping-cart"></i> 购物车（0）</a>
+                <div><p>购物车中还没有商品，赶紧选购吧！</p></div>
             </div>
         </div>
     </div>
