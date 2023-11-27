@@ -19,6 +19,48 @@
             margin: 0;padding: 0;
             background-color: rgb(51, 51, 51);
         }
+        #banner #content{
+            width: 1230px;
+            margin: 0 auto;
+        }
+        #banner #content .banner1 ul {
+            width: 100%;height: 100%;
+        }
+        #banner #content .banner1 ul li{
+            float: left;
+            font-size: 12px;
+            margin-top: 20px;
+            transform: translateY(-50%);
+        }
+        #banner #content .banner1 ul li:hover a{
+            color: white;
+        }
+        #banner #content .banner1 ul li::after{
+            content: '|';
+            color: rgb(62, 62, 62);
+            margin: 0 7px;
+        }
+        #banner #content .banner1 ul li:nth-child(12)::after,
+        #banner #content .banner1 ul li:nth-child(15)::after{
+            content: '';
+        }
+        #banner #content .banner1 ul li:nth-child(13){
+            margin-left: 163px;
+        }
+        #banner #content .banner1 ul li a{
+            color: rgb(176, 176, 176);
+        }
+        #banner #content .banner2{
+            margin-left: 90%;
+            width: 120px;height: 40px;
+            background-color: rgb(66, 66, 66);
+        }
+        #banner #content .banner2 p{
+            color: rgb(176, 176, 176);
+        }
+        #banner #content .banner2:hover p{
+            color: orangered;
+        }
         #all{
             position: relative;
             width: 1230px;
@@ -262,7 +304,30 @@
 </head>
 <body>
     <div id="banner">
-
+        <div id="content">
+            <div class="banner1">
+                <ul>
+                    <li><a href="">小米官网</a></li>
+                    <li><a href="">小米商城</a></li>
+                    <li><a href="">小米澎湃OS</a></li>
+                    <li><a href="">IoT</a></li>
+                    <li><a href="">云服务</a></li>
+                    <li><a href="">天星数科</a></li>
+                    <li><a href="">有品</a></li>
+                    <li><a href="">小爱开放平台</a></li>
+                    <li><a href="">资质证照</a></li>
+                    <li><a href="">协议规则</a></li>
+                    <li><a href="">下载app</a></li>
+                    <li><a href="">Select Location</a></li>
+                    <li><a href="">登录</a></li>
+                    <li><a href="">注册</a></li>
+                    <li><a href="">消息通知</a></li>
+                </ul>
+            </div>
+            <div class="banner2">
+                <p><i class="fa fa-shopping-cart"></i>购物车(0)</p>
+            </div>
+        </div>
     </div>
     <div id="all">
         <div id="top">
