@@ -1,5 +1,7 @@
 一个仿照小米商城官网的作业
 =
+可访问下面链接查看:  
+https://xiyi20.github.io/Mishop.github.io/
 放个对比,像就完事了没啥好说的  
 官方版:  
 ![官方版](https://raw.githubusercontent.com/xiyi20/Mishop.github.io/main/preview/mishop.png)
