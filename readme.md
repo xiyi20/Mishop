@@ -2,6 +2,6 @@
 =
 放个对比,像就完事了没啥好说的  
 官方版:  
-![官方版](https://raw.githubusercontent.com/xiyi20/copyXiaomi.html/main/preview/mishop.png)
+![官方版](https://raw.githubusercontent.com/xiyi20/Mishop.github.io/main/preview/mishop.png)
 山寨版:  
-![山寨版](https://raw.githubusercontent.com/xiyi20/copyXiaomi.html/main/preview/preview1.png)
+![山寨版](https://raw.githubusercontent.com/xiyi20/Mishop.github.io/main/preview/preview1.png)
