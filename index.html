@@ -22,7 +22,7 @@
             background-color: rgb(51, 51, 51);
         }
         #banner #content{
-            width: 1230px;
+            width: 1226px;
             margin: 0 auto;
         }
         #banner #content .banner1 ul {
@@ -89,12 +89,12 @@
         }
         #all{
             position: relative;
-            width: 1230px;
+            width: 1226px;
             margin: 0 auto;
         }
         #top{
             position: relative;
-            width: 1230px;
+            width: 1226px;
             height: 100px;
         }
         #top #logo{
@@ -186,42 +186,33 @@
             background-color: orangered;
         }
 
-        #left #left_nav .phone:hover #nav_phone,
-        #nav_phone:hover,
-        #left #left_nav .tv:hover #nav_tv,
-        #nav_tv:hover,
-        #left #left_nav .watch:hover #nav_watch,
-        #nav_watch:hover,
-        #left #left_nav .gear:hover #nav_gear,
-        #nav_gear:hover,
-        #left #left_nav .flat:hover #nav_flat,
-        #nav_flat:hover,
-        #left #left_nav .travel:hover #nav_travel,
-        #nav_travel:hover,
-        #left #left_nav .earphone:hover #nav_earphone,
-        #nav_earphone:hover,
-        #left #left_nav .health:hover #nav_health,
-        #nav_health:hover,
-        #left #left_nav .life:hover #nav_life,
-        #nav_life:hover,
-        #left #left_nav .mind:hover #nav_mind,
-        #nav_mind:hover,
-        #left #left_nav .power:hover #nav_power,
-        #nav_power:hover{
-            display: block;
+        .phone:hover #nav_phone,
+        .tv:hover #nav_tv,
+        .watch:hover #nav_watch,
+        .gear:hover #nav_gear,
+        .flat:hover #nav_flat,
+        .travel:hover #nav_travel,
+        .earphone:hover #nav_earphone,
+        .health:hover #nav_health,
+        .life:hover #nav_life,
+        .mind:hover #nav_mind,
+        .power:hover #nav_power{
+            position: absolute;
+            z-index: 1;
+            left: 233px;top: 0;
+            box-shadow: 2px 2px 5px gray;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 460px;
         }
 
         #nav_phone,#nav_tv,#nav_watch,
         #nav_gear,#nav_flat,#nav_travel,
         #nav_earphone,#nav_health,
         #nav_life,#nav_mind,#nav_power{
-            position: absolute;
             display: none;
-            z-index: 1;
-            left: 233px;top: 0;
-            box-shadow: 2px 2px 5px gray;
-            width: 300px;height: 460px;
-            background-color: white;
         }
         #nav_phone dd,#nav_phone a,
         #nav_tv dd,#nav_tv a,
@@ -234,8 +225,9 @@
         #nav_life dd,#nav_life a,
         #nav_mind dd,#nav_mind a,
         #nav_power dd,#nav_power a{
-            margin: 20px 0 0 0;
-            text-align: center;
+            display: block;
+            width: 190px;
+            height: calc(100% / 5);
             font-size: 20px;
             color: black;
 
@@ -258,11 +250,12 @@
         #main{
             position: absolute;
             z-index: 0;
-            width: 1230px;
+            width: 1226px;
             height: 460px;
         }
         #bottom{
-            width: 1230px;
+            margin-top: 473.5px;
+            width: 1226px;
             height: 172px;
         }
         #bottom #bottom1{
@@ -297,21 +290,95 @@
         #bottom #bottom2{
             float: left;
             margin-left: 18px;
-            width: 979px;
+            width: 975px;
             height: 100%;
         }
         #bottom #bottom2 div{
             float: left;
-            margin-left: 17px;
-            width: 315px;height: 100%;
+            margin-left: 18px;
+            width: 313px;height: 100%;
         }
         #bottom #bottom2 div:first-child{
             margin-left: 0;
         }
+        #all2{
+            margin-top: 26px;
+            background-color: rgb(245, 245, 245);
+        }
         #box{
-            width: 1230px;
-            height: 460px;
-            margin-bottom: 15px;
+            width: 1226px;
+            margin: 0 auto;
+        }
+        #banner2{
+            padding-top: 26px;
+            height: 120px;
+        }
+        #main2{
+            margin-top: 22.5px;
+            width: 1226px;height: 686px;
+        }
+        #top_nav2{
+            display: flex;
+            position: relative;
+            align-items: center;
+            height: 58px;
+        }
+        #top_nav2 h2{
+            font-size: 22px;
+            font-weight: 150;
+        }
+        #top_nav2 #more{
+            position: absolute;
+            right: 0;
+        }
+        #top_nav2 #more a{
+            color: rgb(66, 66, 66);
+        }
+        #top_nav2 #more a:hover{
+            color: orangered;
+        }
+        #content2{
+            position: relative;
+        }
+        #nav2_left{
+            position: absolute;
+            width: 234px;height: 614px;
+        }
+        #nav2_main{
+            position: absolute;
+            left: 234px;
+            width: 992px;height: 614px;
+        }
+        #content2 ul li{
+            float: left;
+            display: block;
+            text-align: center;
+            margin-left: 14px;
+            margin-bottom: 14px;
+            background-color: white;
+            width: 234px;height: 300px;
+        }
+        #content2 ul li img{
+            padding-top: 20px;
+        }
+        #content2 ul li h3{
+            padding-top: 16px;
+            font-weight: 400;
+            font-size: 13px;
+        }
+        #content2 ul li p:nth-of-type(1){
+            font-size: 12px;
+            padding-top: 4px;
+            color: rgb(176, 176, 176);
+        }
+        #content2 ul li p:nth-of-type(2){
+            padding-top: 13px;
+            color: orangered;
+            font-size: 13px;
+        }
+        #content2 ul li del{
+            color: rgb(176, 176, 176);
+            font-size: 13px;
         }
     </style>
     <script>
@@ -379,136 +446,136 @@
             </div>
         </div>
 
-        <div id="box">
-            <div id="left">
-                <div id="left_nav">
-                    <li class="phone"><span>手机</span>
-                        <div id="nav_phone">
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米8</a></dd>
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米9</a></dd>
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米10</a></dd>
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米11</a></dd>
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米12</a></dd>
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米13</a></dd>
-                            <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米14</a></dd>
-                        </div>
-                    </li>
-                    <li class="tv"><span>电视</span>
-                        <div id="nav_tv">
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视a</a></dd>
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视b</a></dd>
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视c</a></dd>
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视d</a></dd>
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视e</a></dd>
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视f</a></dd>
-                            <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视g</a></dd>
-                        </div>
-                    </li>
-                    <li class="watch"><span>手表</span>
-                        <div id="nav_watch">
-                            <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表a</a></dd>
-                            <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表b</a></dd>
-                            <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表c</a></dd>
-                            <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表d</a></dd>
-                            <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表e</a></dd>
-                            <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表f</a></dd>
-                            <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表g</a></dd>
-                        </div>
-                    </li>
-                    <li class="gear"><span>家电</span>
-                        <div id="nav_gear">
-                            <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具a</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具b</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具c</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具d</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具e</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具f</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具g</a></dd>
-                        </div>
-                    </li>
-                    <li class="flat"><span>平板</span>
-                        <div id="nav_flat">
-                            <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板a</a></dd>
-                            <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板b</a></dd>
-                            <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板c</a></dd>
-                            <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板d</a></dd>
-                            <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板e</a></dd>
-                            <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板f</a></dd>
-                            <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板g</a></dd>
-                        </div>
-                    </li>
-                    <li class="travel"><span>出行</span>
-                        <div id="nav_travel">
-                            <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行a</a></dd>
-                            <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行b</a></dd>
-                            <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行c</a></dd>
-                            <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行d</a></dd>
-                            <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行e</a></dd>
-                            <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行f</a></dd>
-                            <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行g</a></dd>
-                        </div>
-                    </li>
-                    <li class="earphone"><span>耳机</span>
-                        <div id="nav_earphone">
-                            <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机a</a></dd>
-                            <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机b</a></dd>
-                            <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机c</a></dd>
-                            <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机d</a></dd>
-                            <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机e</a></dd>
-                            <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机f</a></dd>
-                            <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机g</a></dd>
-                        </div>
-                    </li>
-                    <li class="health"><span>健康</span>
-                        <div id="nav_health">
-                            <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">洗手机</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">剃须机</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">牙刷</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">吹风机</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">走步机</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">体脂秤</a></dd>
-                            <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">米家筋膜枪</a></dd>
-                        </div>
-                    </li>
-                    <li class="life"><span>生活</span>
-                        <div id="nav_life">
-                            <dd><a href=""><img class="iconfont icon-icon" src="" alt="">小肩包</a></dd>
-                            <dd><a href=""><img class="iconfont icon-icon" src="" alt="">旅行箱</a></dd>
-                            <dd><a href=""><img class="iconfont icon-icon" src="" alt="">收纳袋</a></dd>
-                            <dd><a href=""><img class="iconfont icon-icon" src="" alt="">运动鞋</a></dd>
-                            <dd><a href=""><img class="iconfont icon-icon" src="" alt="">眼镜</a></dd>
-                            <dd><a href=""><img class="iconfont icon-icon" src="" alt="">螺丝刀</a></dd>
-                            <dd><a href=""><img class="iconfont icon-icon" src="" alt="">水杯</a></dd>
-                        </div>
-                    </li>
-                    <li class="mind"><span>智能</span>
-                        <div id="nav_mind">
-                            <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">CyberDog</a></dd>
-                            <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">打印机</a></dd>
-                            <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">小米路由器</a></dd>
-                            <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">对讲机</a></dd>
-                            <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">摄像头</a></dd>
-                            <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">小爱音响</a></dd>
-                            <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">智能门锁</a></dd>
-                        </div>
-                    </li>
-                    <li class="power"><span>电源</span>
-                        <div id="nav_power">
-                            <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">插排插座</a></dd>
-                            <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">移动电源</a></dd>
-                            <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">数据线</a></dd>
-                            <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">充电器</a></dd>
-                            <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">电池</a></dd>
-                            <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">黑鲨配件</a></dd>
-                            <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">其他配件</a></dd>
-                        </div>
-                    </li>
-                </div>
-            </div>
-            <div id="main">
-                <a href=""><img src="images/k70.jpg" width="100%" height="100%" alt=""></a>
+
+        <div id="left">
+            <div id="left_nav">
+                <li class="phone"><span>手机</span>
+                    <div id="nav_phone">
+                        <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米8</a></dd>
+                        <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米9</a></dd>
+                        <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米10</a></dd>
+                        <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米11</a></dd>
+                        <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米12</a></dd>
+                        <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米13</a></dd>
+                        <dd><a href=""><img class="fa fa-mobile" src="" alt="">小米14</a></dd>
+                    </div>
+                </li>
+                <li class="tv"><span>电视</span>
+                    <div id="nav_tv">
+                        <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视a</a></dd>
+                        <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视b</a></dd>
+                        <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视c</a></dd>
+                        <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视d</a></dd>
+                        <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视e</a></dd>
+                        <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视f</a></dd>
+                        <dd><a href=""><img class="fa fa-tv" src="" alt="">小米电视g</a></dd>
+                    </div>
+                </li>
+                <li class="watch"><span>手表</span>
+                    <div id="nav_watch">
+                        <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表a</a></dd>
+                        <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表b</a></dd>
+                        <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表c</a></dd>
+                        <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表d</a></dd>
+                        <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表e</a></dd>
+                        <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表f</a></dd>
+                        <dd><a href=""><img class="iconfont icon-chuandaishebei" src="" alt="">小米手表g</a></dd>
+                    </div>
+                </li>
+                <li class="gear"><span>家电</span>
+                    <div id="nav_gear">
+                        <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具a</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具b</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具c</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具d</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具e</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具f</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiaju-" src="" alt="">小米家具g</a></dd>
+                    </div>
+                </li>
+                <li class="flat"><span>平板</span>
+                    <div id="nav_flat">
+                        <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板a</a></dd>
+                        <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板b</a></dd>
+                        <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板c</a></dd>
+                        <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板d</a></dd>
+                        <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板e</a></dd>
+                        <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板f</a></dd>
+                        <dd><a href=""><img class="iconfont icon-pingban" src="" alt="">小米平板g</a></dd>
+                    </div>
+                </li>
+                <li class="travel"><span>出行</span>
+                    <div id="nav_travel">
+                        <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行a</a></dd>
+                        <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行b</a></dd>
+                        <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行c</a></dd>
+                        <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行d</a></dd>
+                        <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行e</a></dd>
+                        <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行f</a></dd>
+                        <dd><a href=""><img class="iconfont icon-zihangche" src="" alt="">小米出行g</a></dd>
+                    </div>
+                </li>
+                <li class="earphone"><span>耳机</span>
+                    <div id="nav_earphone">
+                        <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机a</a></dd>
+                        <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机b</a></dd>
+                        <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机c</a></dd>
+                        <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机d</a></dd>
+                        <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机e</a></dd>
+                        <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机f</a></dd>
+                        <dd><a href=""><img class="iconfont icon-erji" src="" alt="">小米耳机g</a></dd>
+                    </div>
+                </li>
+                <li class="health"><span>健康</span>
+                    <div id="nav_health">
+                        <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">洗手机</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">剃须机</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">牙刷</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">吹风机</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">走步机</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">体脂秤</a></dd>
+                        <dd><a href=""><img class="iconfont icon-jiankang" src="" alt="">米家筋膜枪</a></dd>
+                    </div>
+                </li>
+                <li class="life"><span>生活</span>
+                    <div id="nav_life">
+                        <dd><a href=""><img class="iconfont icon-icon" src="" alt="">小肩包</a></dd>
+                        <dd><a href=""><img class="iconfont icon-icon" src="" alt="">旅行箱</a></dd>
+                        <dd><a href=""><img class="iconfont icon-icon" src="" alt="">收纳袋</a></dd>
+                        <dd><a href=""><img class="iconfont icon-icon" src="" alt="">运动鞋</a></dd>
+                        <dd><a href=""><img class="iconfont icon-icon" src="" alt="">眼镜</a></dd>
+                        <dd><a href=""><img class="iconfont icon-icon" src="" alt="">螺丝刀</a></dd>
+                        <dd><a href=""><img class="iconfont icon-icon" src="" alt="">水杯</a></dd>
+                    </div>
+                </li>
+                <li class="mind"><span>智能</span>
+                    <div id="nav_mind">
+                        <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">CyberDog</a></dd>
+                        <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">打印机</a></dd>
+                        <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">小米路由器</a></dd>
+                        <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">对讲机</a></dd>
+                        <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">摄像头</a></dd>
+                        <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">小爱音响</a></dd>
+                        <dd><a href=""><img class="iconfont icon-wuguan" src="" alt="">智能门锁</a></dd>
+                    </div>
+                </li>
+                <li class="power"><span>电源</span>
+                    <div id="nav_power">
+                        <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">插排插座</a></dd>
+                        <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">移动电源</a></dd>
+                        <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">数据线</a></dd>
+                        <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">充电器</a></dd>
+                        <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">电池</a></dd>
+                        <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">黑鲨配件</a></dd>
+                        <dd><a href=""><img class="iconfont icon-dianyuan" src="" alt="">其他配件</a></dd>
+                    </div>
+                </li>
             </div>
         </div>
+        <div id="main">
+            <a href=""><img src="images/k70.jpg" width="100%" height="100%" alt=""></a>
+        </div>
+
 
         <div id="bottom">
             <div id="bottom1">
@@ -528,6 +595,79 @@
             </div>
         </div>
     </div>
+    <div id="all2">
+        <div id="box">
+            <div id="banner2">
+                <img src="./images/mi14pro.jpg" width="1226" height="120" alt="">
+            </div>
+            <div id="main2">
+                <div id="top_nav2">
+                    <h2>手机</h2>
+                    <div id="more">
+                        <a href="" >查看更多 <i class="iconfont icon-jinrujiantouxiao"></i></a>
+                    </div>
+                </div>
+                <div id="content2">
+                    <div id="nav2_left">
+                        <img src="./images/k70col.jpg" width="234" height="614" alt="">
+                    </div>
+                    <div id="nav2_main">
+                        <ul>
+                            <li>
+                                <img src="./images/k70prolist1.jpg" width="160" height="160" alt="">
+                                <h3>Redmi K70 Pro</h3>
+                                <p>第三代骁龙8 年度旗舰平台</p>
+                                <p>3299元起</p>
+                            </li>
+                            <li>
+                                <img src="./images/k70list2.jpg" width="160" height="160" alt="">
+                                <h3>Redmi K70</h3>
+                                <p>第二代骁龙8 年度旗舰平台</p>
+                                <p>2499元起</p>
+                            </li>
+                            <li>
+                                <img src="./images/k70elist3.jpg" width="160" height="160" alt="">
+                                <h3>Redmi K70E</h3>
+                                <p>新一代旗舰焊门员</p>
+                                <p>1999元起</p>
+                            </li>
+                            <li>
+                                <img src="./images/mi14prolist4.jpg" width="160" height="160" alt="">
+                                <h3>Xiaomi 14 Pro</h3>
+                                <p>徕卡Summilux可变光圈镜头｜小米澎湃OS</p>
+                                <p>4999元起</p>
+                            </li>
+                            <li>
+                                <img src="./images/mi14list5.jpg" width="160" height="160" alt="">
+                                <h3>Redmi 14</h3>
+                                <p>徕卡Summilux可变光圈镜头｜小米澎湃OS</p>
+                                <p>3999元起</p>
+                            </li>
+                            <li>
+                                <img src="./images/redminote13prolist6.jpg" width="160" height="160" alt="">
+                                <h3>Redmi Note 13 Pro</h3>
+                                <p>小金刚品质</p>
+                                <p>1399元起&nbsp;&nbsp;<del>1499元</del></p>
+                            </li>
+                            <li>
+                                <img src="./images/redminote13pplist7.jpg" width="160" height="160" alt="">
+                                <h3>Redmi Note 13 Pro+</h3>
+                                <p> 天玑 7200-Ultra 处理器</p>
+                                <p>1899元起&nbsp;&nbsp;<del>1999元</del></p>
+                            </li>
+                            <li>
+                                <img src="./images/redminote135glist8.jpg" width="160" height="160" alt="">
+                                <h3>Redmi Note 13 5G</h3>
+                                <p> 1 亿像素 更快更清晰</p>
+                                <p>1099元起&nbsp;&nbsp;<del>1199元</del></p>
+                            </li>
 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
