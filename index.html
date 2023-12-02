@@ -10,11 +10,13 @@
         a{text-decoration: none;color: white;}
         li{list-style: none;}
         @keyframes jianbian{
-            0%{opacity: 0;}
-            25%{opacity: 0.25;}
             50%{opacity: 0.5;}
             75%{opacity: 0.75;}
             100%{opacity: 1;}
+        }
+        @keyframes pingyi{
+            0%{transform: translateY(0);}
+            100%{transform: translateY(-2px);}
         }
         #banner{
             height: 40px;
@@ -205,7 +207,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            height: 460px;
+            height: 460px;width: 420px;
         }
 
         #nav_phone,#nav_tv,#nav_watch,
@@ -230,7 +232,6 @@
             height: calc(100% / 5);
             font-size: 20px;
             color: black;
-
         }
 
         #nav_phone a:hover,
@@ -252,6 +253,27 @@
             z-index: 0;
             width: 1226px;
             height: 460px;
+        }
+        #mainleft{
+            left: 233px;top: 50%;
+        }
+        #mainright{
+            right: 0;top: 50%;
+        }
+        #mainleft,#mainright{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;height: 65px;
+            transform: translateY(-50%);
+        }
+        #mainleft i,#mainright i{
+            color: rgb(128, 128, 128);
+            font-size: 30px;
+        }
+        #mainleft:hover,#mainright:hover{
+            background-color: rgba(119, 119, 119,0.5);
         }
         #bottom{
             margin-top: 473.5px;
@@ -297,6 +319,10 @@
             float: left;
             margin-left: 18px;
             width: 313px;height: 100%;
+        }
+        #bottom #bottom2 div:hover{
+            transition: box-shadow .2s linear;
+            box-shadow: 0 5px 20px rgb(176, 176, 176);
         }
         #bottom #bottom2 div:first-child{
             margin-left: 0;
@@ -357,6 +383,11 @@
             margin-bottom: 14px;
             background-color: white;
             width: 234px;height: 300px;
+        }
+        #main2 li:hover{
+            transition: box-shadow .2s linear;
+            animation: pingyi 300ms ease-in-out 0ms 1 normal both;
+            box-shadow: 0 10px 15px rgb(176, 176, 176);
         }
         #content2 ul li img{
             padding-top: 20px;
@@ -445,7 +476,6 @@
                 <button type="submit" class="fas fa-search"></button>
             </div>
         </div>
-
 
         <div id="left">
             <div id="left_nav">
@@ -574,6 +604,12 @@
         </div>
         <div id="main">
             <a href=""><img src="images/k70.jpg" width="100%" height="100%" alt=""></a>
+            <div id="mainleft">
+                <i class="iconfont icon-xiangzuojiantou"></i>
+            </div>
+            <div id="mainright">
+                <i class="iconfont icon-xiangyoujiantou"></i>
+            </div>
         </div>
 
 
@@ -609,59 +645,74 @@
                 </div>
                 <div id="content2">
                     <div id="nav2_left">
-                        <img src="./images/k70col.jpg" width="234" height="614" alt="">
+                        <li><img src="./images/k70col.jpg" width="234" height="614" alt=""></li>
                     </div>
                     <div id="nav2_main">
                         <ul>
                             <li>
-                                <img src="./images/k70prolist1.jpg" width="160" height="160" alt="">
-                                <h3>Redmi K70 Pro</h3>
-                                <p>第三代骁龙8 年度旗舰平台</p>
-                                <p>3299元起</p>
+                                <a href="">
+                                    <img src="./images/k70prolist1.jpg" width="160" height="160" alt="">
+                                    <h3>Redmi K70 Pro</h3>
+                                    <p>第三代骁龙8 年度旗舰平台</p>
+                                    <p>3299元起</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="./images/k70list2.jpg" width="160" height="160" alt="">
-                                <h3>Redmi K70</h3>
-                                <p>第二代骁龙8 年度旗舰平台</p>
-                                <p>2499元起</p>
+                                <a href="">
+                                    <img src="./images/k70list2.jpg" width="160" height="160" alt="">
+                                    <h3>Redmi K70</h3>
+                                    <p>第二代骁龙8 年度旗舰平台</p>
+                                    <p>2499元起</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="./images/k70elist3.jpg" width="160" height="160" alt="">
-                                <h3>Redmi K70E</h3>
-                                <p>新一代旗舰焊门员</p>
-                                <p>1999元起</p>
+                                <a href="">
+                                    <img src="./images/k70elist3.jpg" width="160" height="160" alt="">
+                                    <h3>Redmi K70E</h3>
+                                    <p>新一代旗舰焊门员</p>
+                                    <p>1999元起</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="./images/mi14prolist4.jpg" width="160" height="160" alt="">
-                                <h3>Xiaomi 14 Pro</h3>
-                                <p>徕卡Summilux可变光圈镜头｜小米澎湃OS</p>
-                                <p>4999元起</p>
+                                <a href="">
+                                    <img src="./images/mi14prolist4.jpg" width="160" height="160" alt="">
+                                    <h3>Xiaomi 14 Pro</h3>
+                                    <p>徕卡Summilux可变光圈镜头｜小米澎湃OS</p>
+                                    <p>4999元起</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="./images/mi14list5.jpg" width="160" height="160" alt="">
-                                <h3>Redmi 14</h3>
-                                <p>徕卡Summilux可变光圈镜头｜小米澎湃OS</p>
-                                <p>3999元起</p>
+                                <a href="">
+                                    <img src="./images/mi14list5.jpg" width="160" height="160" alt="">
+                                    <h3>Redmi 14</h3>
+                                    <p>徕卡Summilux可变光圈镜头｜小米澎湃OS</p>
+                                    <p>3999元起</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="./images/redminote13prolist6.jpg" width="160" height="160" alt="">
-                                <h3>Redmi Note 13 Pro</h3>
-                                <p>小金刚品质</p>
-                                <p>1399元起&nbsp;&nbsp;<del>1499元</del></p>
+                                <a href="">
+                                    <img src="./images/redminote13prolist6.jpg" width="160" height="160" alt="">
+                                    <h3>Redmi Note 13 Pro</h3>
+                                    <p>小金刚品质</p>
+                                    <p>1399元起&nbsp;&nbsp;<del>1499元</del></p>
+                                </a>
                             </li>
                             <li>
-                                <img src="./images/redminote13pplist7.jpg" width="160" height="160" alt="">
-                                <h3>Redmi Note 13 Pro+</h3>
-                                <p> 天玑 7200-Ultra 处理器</p>
-                                <p>1899元起&nbsp;&nbsp;<del>1999元</del></p>
+                                <a href="">
+                                    <img src="./images/redminote13pplist7.jpg" width="160" height="160" alt="">
+                                    <h3>Redmi Note 13 Pro+</h3>
+                                    <p> 天玑 7200-Ultra 处理器</p>
+                                    <p>1899元起&nbsp;&nbsp;<del>1999元</del></p>
+                                </a>
                             </li>
                             <li>
-                                <img src="./images/redminote135glist8.jpg" width="160" height="160" alt="">
-                                <h3>Redmi Note 13 5G</h3>
-                                <p> 1 亿像素 更快更清晰</p>
-                                <p>1099元起&nbsp;&nbsp;<del>1199元</del></p>
+                                <a href=""></a>
+                                    <img src="./images/redminote135glist8.jpg" width="160" height="160" alt="">
+                                    <h3>Redmi Note 13 5G</h3>
+                                    <p> 1 亿像素 更快更清晰</p>
+                                    <p>1099元起&nbsp;&nbsp;<del>1199元</del></p>
+                                </a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
